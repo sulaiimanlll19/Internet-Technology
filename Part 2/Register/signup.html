@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <!-- Group #05 -->
-
+    <!-- https://www.youtube.com/watch?v=2HVKizgcfjo&ab_channel=TechnicalBabaji Watch it-->
     <head>
         
         <title> Register </title>
@@ -13,37 +12,39 @@
         
         <section id="form-Section">
 
-            <form action="#" autocomplete="on">
+            <form action="connect.php" method="POST" autocomplete="on">
 
                 <h1 id="Register-h1">Register</h1>
 
                 <div>
                     <!-- <img src="user.png" alt="" height="20px" width="20px"> -->
-                    <input type="email" name="" id="email-input" placeholder="Email" size="35" >
+                    <input type="email" name="email" id="email-input" placeholder="Email" size="35" required>
                 </div>
 
                 <div>
                     <!-- <img src="user.png" alt="" height="20px" width="20px"> -->
-                    <input type="text" name="" id="username-input" placeholder="Username" size="35" >
+                    <input type="text" name="username" id="username-input" placeholder="Username" size="35" required>
                 </div>
 
                 <div>
                     <!-- <img src="padlock.png" alt="" height="20px" width="20px"> -->
-                    <input type="text" name="" id="password-input" placeholder="Password" size="35">
+                    <input type="password" name="password" id="password-input" placeholder="Password" size="35" required>
                 </div>
 
                 <div>
                     <!-- <img src="padlock.png" alt="" height="20px" width="20px"> -->
-                    <input type="text" name="" id="password-input" placeholder="Confirm Password" size="35">
+                    <input type="text" name="confirmPassword" id="password-input" placeholder="Confirm Password" size="35">
                 </div>
 
+                <!-- Add gender field -->
+
                 <div>
-                    <input type="checkbox" id="Agree-input" size="50">
+                    <input type="checkbox" name="agree" id="Agree-input" size="50">
                     <label> Agree terms & conditions </label>
                 </div>
 
                 <div>
-                    <input type="submit" value="Register" id="Register-butt" size="35">
+                    <input type="submit" name="Register" value="Register" id="Register-butt" size="35">
                 </div>
 
                 <div>
